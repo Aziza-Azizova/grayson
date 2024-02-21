@@ -1,0 +1,27 @@
+$playfairDisplay: (
+    'Regular',
+    400),
+    ('Italic', 500),
+    ('Bold', 700
+);
+
+@each $name, $weight in $playfairDisplay {
+    @font-face {
+        font-family: 'Playfair Display';
+        src: url('../fonts/PlayfairDisplay-#{$name}.ttf');
+        font-weight: $weight;
+    }
+}
+
+$roboto: (
+    'Regular',
+    400
+);
+
+@each $name, $weight in $roboto {
+    @font-face {
+        font-family: Roboto;
+        src: url('../fonts/Roboto-#{$name}.ttf');
+        font-weight: $weight;
+    }
+}
